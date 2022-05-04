@@ -9,7 +9,6 @@
 #del que se adquieren una o varias unidades. El iva a aplicar es del 19% y si el precio bruto(precio de venta mas IVA)
 #es mayor de 500.000 COP, se aplicará un descuento del 6.5% sobre el total.
 #Se debe pedir al usuario que ingrese el valor del articulo y la cantidad.
-import sys
 
 numero_producto = int(input("Cuantos productos compró?: ")) #solo admite enteros de la cantidad total de articulos. #!!restringir a enteros positivos
 precio_articulo = float(input("Cuanto costó el producto?: ")) #funciona con float usando . pero no con comas
