@@ -32,6 +32,6 @@ else:
 
 print(f"El precio total sin iva es de : {total_sin_iva}")
 print(f"El total a pagar con iva del 19% sin la promo es de : {precio_bruto}")
-""" To_do : Solucionar:funciona
+""" FIXME: Solucionar:funciona
 pero al introducir 1 articulo con precio de 499mil, le aplica el descuento
 """
