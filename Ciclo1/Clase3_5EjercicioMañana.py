@@ -3,7 +3,7 @@
 #----------------------------------------------------------------------------
 # Created By  : davoc
 # Created: Clase 3 ciclo 1 mision tic 2022. Parte 5 , Tarea para el 4 Mayo 2022
-# version ='1.0'
+# version ='2.0'
 
 #Se trata de escribir el algoritmo que permita calcular el valor a pagar para una compra de un articulo determinado 
 #del que se adquieren una o varias unidades. El iva a aplicar es del 19% y si el precio bruto(precio de venta mas IVA)
