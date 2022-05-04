@@ -9,6 +9,16 @@
 #del que se adquieren una o varias unidades. El iva a aplicar es del 19% y si el precio bruto(precio de venta mas IVA)
 #es mayor de 500.000 COP, se aplicará un descuento del 6.5% sobre el total.
 #Se debe pedir al usuario que ingrese el valor del articulo y la cantidad.
+import sys
 
-numero_articulos = int(input("Cantidad de articulos comprados: ")
-precio_articulo = 
+numero_producto = int(input("Cuantos productos compró?: ")) #solo admite enteros de la cantidad total de articulos.
+precio_articulo = float(input("Cuanto costó un producto?: ")) #funciona con float usando . pero no con comas
+
+total_sin_iva = precio_articulo * numero_producto
+precio_bruto = precio_articulo * numero_producto * 0.19 + precio_articulo * numero_producto
+#el precio bruto antes del + solo calcularia el iva de esos producto, entonces le sumo de nuevo las var
+#podria almacenar el total del iva en una var nueva, y en la sumarla a precio sin iva
+
+
+print(f"El precio total sin iva es de : {total_sin_iva}")
+print(f"El precio total con iva es de : {precio_bruto}")
