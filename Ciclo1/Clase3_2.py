@@ -12,7 +12,7 @@ if num1 > num2:
     print(f"El número mayor es: {num1}") #Ojo con la identación. Debe estar dentro del condicional 1tabulacion. Si no es así se ejecutaria siempre
 else:
     if num2 > num1:
-      print("El número mayor es: {num2")
+      print("El número mayor es: {num2}")
     else:
         print("Los dos números son iguales") #Sin necesidad de evaluar la igualdad ==
 
