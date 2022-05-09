@@ -33,7 +33,11 @@ def CDT(usuario:str,capital:int,tiempo:int):#
     if tiempo > 2:
         porcentaje_interes = 0.03
         valortotal = capital+capital * porcentaje_interes * tiempo /12
-        return (f"Para el usuario {usuario} La cantidad de dinero a recibir, según el monto inicial {capital} para un tiempo de {tiempo} meses es: {valortotal}")
+        mensaje = print((f"Para el usuario {usuario} La cantidad de dinero a recibir, según el monto inicial {capital} para un tiempo de {tiempo} meses es: {valortotal}"))
+        return  mensaje 
+        #return = (f"Para el usuario {usuario} La cantidad de dinero a recibir, según el monto inicial {capital} para un tiempo de {tiempo} meses es: {valortotal}"))
+
+
     if tiempo <= 2: # si se abre un if es obligatorio el else? o elif? en este caso como no es un ciclo no es necesario detenerlo?
         porcentaje_aperder = 0.02
         valoraperder = capital * porcentaje_aperder
@@ -42,10 +46,10 @@ def CDT(usuario:str,capital:int,tiempo:int):#
 
 print(CDT("AB1012", 1000000, 3))
 print(CDT("ER3366", 65000, 2))
-print(CDT("Prueba2", 10000, 1))
 usuario = "carlos"
 print(type(usuario))
 
+#Si quiero tomar los datos de entrada del usuario
 usuario = str(input("Cual es su nombre de usuario: "))
 capital = int(input("Monto a invertit: ")) #si el usuario entra un float, como hago para transformarlo a entero?
 tiempo = int(input("Tiempo en meses: ")) #este tiempo es en meses
