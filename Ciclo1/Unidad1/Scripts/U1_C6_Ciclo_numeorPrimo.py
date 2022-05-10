@@ -46,15 +46,15 @@ while numero != 0:
 
 def es_primo(numero:int):
     canditad_divisores = 0
-        x = 2
-        while x < numero/2:  #porque es menor al anterior que la persona, no justo en el limite
-            if numero % x == 0:
-                canditad_divisores = canditad_divisores + 1
-            x = x +1
-        if canditad_divisores >0 or numero < 2:# o < 1El or lo uso por la consideración especial
-            print("Bro el número no es primo")
-        else:
-            print("Bro el número es primo")
+    x = 2
+    while x < numero/2:  #porque es menor al anterior que la persona, no justo en el limite
+        if numero % x == 0:
+            canditad_divisores = canditad_divisores + 1
+        x = x +1
+    if canditad_divisores >0 or numero < 2:# o < 1El or lo uso por la consideración especial
+        print("Bro el número no es primo")
+    else:
+        print("Bro el número es primo")
 
 
 numero = 1
