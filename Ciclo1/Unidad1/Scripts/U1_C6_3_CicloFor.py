@@ -20,3 +20,14 @@ i = 10
 while i >= 1:
     print(i)
     i = i - 1
+
+#Tabla de multiplcar
+
+x = 1
+while x <= 10:
+    print(x*8)
+    x = x + 1
+
+# Pero si lo hacemos con for
+for i in range(1,11):
+    print(i*8)
