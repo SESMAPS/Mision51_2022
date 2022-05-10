@@ -22,8 +22,8 @@ else:
 
 
 #Si quiero escribir un programa que pregunte sucesivamente al usuario un número mayor que cero y le diga si es un primo o no
-#Si el usuario digita 0, el programa debe terminar
-#https://www.youtube.com/watch?v=HiXLkL42tMU&t=1064s
+#Si el usuario digita 0, el programa debe terminar. Version 1.0
+#https://www.youtube.com/watch?v=HiXLkL42tMU&t=1064s sobre git
 
 numero = 1
 while numero != 0:
@@ -41,3 +41,28 @@ while numero != 0:
             print("Bro el número no es primo")
         else:
             print("Bro el número es primo")
+
+#La segunda version optimizando el programa
+
+def es_primo(numero:int):
+    canditad_divisores = 0
+        x = 2
+        while x < numero/2:  #porque es menor al anterior que la persona, no justo en el limite
+            if numero % x == 0:
+                canditad_divisores = canditad_divisores + 1
+            x = x +1
+        if canditad_divisores >0 or numero < 2:# o < 1El or lo uso por la consideración especial
+            print("Bro el número no es primo")
+        else:
+            print("Bro el número es primo")
+
+
+numero = 1
+while numero != 0:
+    numero = int(input("Ingrese un número (para temrinar ingrese 0): ")) #lo ponemos aqui porque queremos que se repita esta pregunta, por eso no esta fuera del while
+    if numero ==0:
+        print("Fin del programa")
+    else:
+        es_primo(numero)
+        
+        
