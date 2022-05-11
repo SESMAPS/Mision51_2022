@@ -7,7 +7,7 @@ Repositorio personal para curso de programación misiontic 2022
 - Modalidad Virtual
 - ✨Desarrollo de soluciones✨
 
-**Tabla de contenidos**
+**Table of Contents**
 
 [TOCM]
 
