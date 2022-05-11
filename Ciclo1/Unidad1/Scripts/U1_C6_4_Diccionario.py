@@ -19,7 +19,7 @@ datosUsuario['Nombre'] = 'Diana'
 print(f"{datosUsuario['Nombre']} {datosUsuario['Apellido']}, su año de nacimiento es: {nacimiento}")
 
 '''Cuando estamos trabajando con estructuras de datos, es muy util plantear 
-    los ciclos for. 
+    los ciclos for. E 
     '''
 
 for key in datosUsuario: # para una variable de control 'key' en el diccionario, a la variable key le voy asignando cada valor de lo que tengo en el diccionario
