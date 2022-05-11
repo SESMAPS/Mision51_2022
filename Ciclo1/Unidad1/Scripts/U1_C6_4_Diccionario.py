@@ -7,20 +7,29 @@
 # Programa para escribir en pantalla los números de 1 al 10:
 # El corchete indica que es un diccionario
 
-datosusuario = {"Nombre":"Ana", "Apellido":"López","Teléfono":3333333,"Estatura":1.60,"Casado":True,"Edad":30} #La primera es la etiqueta, la segunda es el dato a almacenar
-nacimiento = 2022 - datosusuario["Edad"] # Calculo aproximado de edad
+datosUsuario = {'Nombre':'Ana', 'Apellido':'López','Teléfono':3333333,'Estatura':1.60,'Casado':True,'Edad':30} #La primera es la etiqueta, la segunda es el dato a almacenar
+nacimiento = 2022 - datosUsuario['Edad'] # Calculo aproximado de edad
 
-print(str(nacimiento) + "Se llama: " + datosusuario["Nombre"])
+print(str(nacimiento) + 'Se llama: ' + datosUsuario['Nombre'])
 
 #Si queremos sobre escribir el nombre de Ana usamos:
-datosusuario["Nombre"] = "Diana"
+datosUsuario['Nombre'] = 'Diana'
 
-print(f"Hola : {datosusuario["Nombre"]} {datosusuario["Apellido"]}, su año aproximado de nacimiento es: {nacimiento}")
-    """Cuando estamos trabajando con estructuras de datos, es muy util plantear 
+print(f"{datosUsuario['Nombre']} {datosUsuario['Apellido']}, su año de nacimiento es: {nacimiento}")
+
+'''Cuando estamos trabajando con estructuras de datos, es muy util plantear 
     los ciclos for. 
-    """
 
-for key in datosusuario: # para una variable de control "key" en el diccionario, a la variable key le voy asignando cada valor de lo que tengo en el diccionario
+    A mi me estuvo saliendo eso, el problema se soluciona abriendo y cerrando antes de escribir los datos internos 
+o sea puse: print(f'')
+y luego escribi corchetes y asi 
+yo lo tenia todo, pero simplemente no me reconocia los cierres cuando los ponia despues de ingresar la informacion xd 
+    '''
+
+for key in datosUsuario: # para una variable de control 'key' en el diccionario, a la variable key le voy asignando cada valor de lo que tengo en el diccionario
     #y asi va iterando uno a uno, recorriendo todo el dicc. El toma es el nombre de la etiqueta mas no del valor.
     #ejemplo, la key va a tomar nombre, y  luego imprime el valor almacenado en nombre.
-    print(datosusuario[key])
+    print(datosUsuario[key])
+
+for key in datosUsuario: 
+       print(f"{key} : {datosUsuario[key]}")  #ahora yo quiero que tambien me imprima la etiqueta
