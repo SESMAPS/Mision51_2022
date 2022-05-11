@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*- 
 #----------------------------------------------------------------------------
 # Creado por  : davoc
-# En : Clase 5. Parte 4 . Diccionarios mision tic 2022. 9 Mayo 2022 
+# En : Clase 6 y clase 7. Parte 1. Diccionarios mision tic 2022. 11 Mayo 2022 
 # # version ='1.0' VsCodium
-# Programa para escribir en pantalla los números de 1 al 10:
+
 # El corchete indica que es un diccionario
 
 datosUsuario = {'Nombre':'Ana', 'Apellido':'López','Teléfono':3333333,'Estatura':1.60,'Casado':True,'Edad':30} #La primera es la etiqueta, la segunda es el dato a almacenar
