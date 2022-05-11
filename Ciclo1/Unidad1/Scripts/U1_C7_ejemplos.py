@@ -29,3 +29,21 @@ else:
 
 for etiqueta in info_Estudiante:
     print(f"{etiqueta} : {info_Estudiante[etiqueta]}")
+
+# Tips de vcode https://www.udemy.com/course/vscode-mejora-tu-velocidad-para-codificar/
+#Ahora queremos hacerlo pero con una funcion que nos devuelva un nuevo diccionario
+
+def calculo_final(info:dict):
+    info['NotaFinal'] = info['Nota1'] * 30/100 + info['Nota2'] * 40/100 + info['Nota3'] * 30/100
+
+    if info['NotaFinal'] > 3:
+        info['Aprueba'] = 'SI'
+    else:
+        info['Aprueba'] = "NO"
+    return info
+
+datos_Finales = calculo_final(info_Estudiante)
+
+for etiqueta in datos_Finales:
+    print(f"{etiqueta} : {datos_Finales[etiqueta]}")
+
