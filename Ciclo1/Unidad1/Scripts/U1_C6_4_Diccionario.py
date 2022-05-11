@@ -6,6 +6,7 @@
 # # version ='1.0' VsCodium
 
 # El corchete indica que es un diccionario
+#Poner mucho cuidado con el uso de las comillas, si cosas dentro de diccionario es ', en los print va la doble ""
 
 datosUsuario = {'Nombre':'Ana', 'Apellido':'López','Teléfono':3333333,'Estatura':1.60,'Casado':True,'Edad':30} #La primera es la etiqueta, la segunda es el dato a almacenar
 nacimiento = 2022 - datosUsuario['Edad'] # Calculo aproximado de edad
@@ -19,11 +20,6 @@ print(f"{datosUsuario['Nombre']} {datosUsuario['Apellido']}, su año de nacimien
 
 '''Cuando estamos trabajando con estructuras de datos, es muy util plantear 
     los ciclos for. 
-
-    A mi me estuvo saliendo eso, el problema se soluciona abriendo y cerrando antes de escribir los datos internos 
-o sea puse: print(f'')
-y luego escribi corchetes y asi 
-yo lo tenia todo, pero simplemente no me reconocia los cierres cuando los ponia despues de ingresar la informacion xd 
     '''
 
 for key in datosUsuario: # para una variable de control 'key' en el diccionario, a la variable key le voy asignando cada valor de lo que tengo en el diccionario
