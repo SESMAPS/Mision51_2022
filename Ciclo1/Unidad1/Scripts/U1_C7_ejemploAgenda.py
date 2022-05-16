@@ -15,7 +15,7 @@
 # {1:{'Nombre':'Juan', 'Telefono':123}, 2:{'Nombre':'Pedro', 'Telefono':6544}}
 
 #el .key comprueba dentro de un dict si existe el valor que yo le estoy pasando Pero hay que poner mucho cuidado como se quiere consultar
-#En algun caso es mejor usar el get.
+#En algun caso es mejor usar el get. #https://devcode.la/tutoriales/diccionarios-en-python/ https://www.delftstack.com/es/howto/python/python-check-if-value-in-dictionary/
 
 agenda = {}
 opcion = 1
