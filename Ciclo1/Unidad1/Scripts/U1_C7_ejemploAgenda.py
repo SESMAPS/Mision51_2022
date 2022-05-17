@@ -34,6 +34,10 @@ while opcion != 5:
         nombre = input("Ingrese el nombre del contacto que des1ea buscar: ")
         if agenda.get(nombre) != None: #FIXME: se arregló la consulta, el metodo es get en lugar de key, o fromkeys-
             print(f"{nombre} : {agenda[nombre]}")
+        #if nombre in agenda: # note: esta es otra forma de consultar.
+        #    print(f"{nombre} : {agenda[nombre]}")
+        #else:
+        #    print("No existe un contacto con ese nombre")
         else:
             print("No existe un contacto con ese nombre")
     elif opcion == 3:
