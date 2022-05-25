@@ -1,0 +1,66 @@
+apt-get install language-pack-es language-pack-es-base manpages
+
+nano /etc/default/locale
+	LANG="es_ES.UTF-8"
+dpkg-reconfigure locales
+update-locale LANG=es_MX.UTF-8
+dpkg-reconfigure tzdata
+
+apt install openjdk-8-jdk openjdk-8-jdk-headless openjdk-8-jre unattended-upgrades locate make unzip gcc git python3-pip ttf-mscorefonts-installer gdal-bin geotiff-bin largetifftools wireless-tools nmap ufw unzip vsftpd
+
+sudo apt upgrade
+sudo add-apt-repository ppa:ubuntugis/ppa
+sudo apt update -y
+
+sudo apt install -y python3-gdal=3.3.2+dfsg-2~focal2 gdal-bin=3.3.2+dfsg-2~focal2 libgdal-dev=3.3.2+dfsg-2~focal2
+
+sudo apt install -y python3-pip python3-dev python3-virtualenv python3-venv virtualenvwrapper \
+libxml2 libxml2-dev gettext libxslt1-dev libjpeg-dev libpng-dev libpq-dev
+software-properties-common build-essential
+git unzip gcc zlib1g-dev libgeos-dev libproj-dev
+sqlite3 spatialite-bin libsqlite3-mod-spatialite
+sudo add-apt-repository universe
+sudo apt-get update -y
+sudo apt-get install -y git-core git-buildpackage debhelper devscripts
+sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+sudo apt-get update -y
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose
+sudo apt autoremove --purge
+
+sudo usermod -aG docker ${USER}
+su ${USER}
+
+
+
+Docker y repo
+git clone https://github.com/GeoNode/geonode-project.git -b 3.2.x
+
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+mkvirtualenv --python=/usr/bin/python3 geosesmaps
+pip install Django==3.2.12
+
+django-admin startproject --template=./geonode-project -e py,sh,md,rst,json,yml,ini,env,sample,properties -n monitoring-cron -n Dockerfile geosesmaps
+
+cd geosesmaps
+vim .env
+  :%s/localhost/96.126.122.54/g
+docker-compose up --build -d
+---actualizaciones en .env
+docker-compose up -d
+
+noip
+cd /usr/local/src 
+wget https://www.noip.com/client/linux/noip-duc-linux.tar.gz
+    • tar xzf noip-duc-linux.tar.gz 
+    • cd no-ip-2.1.9 
+    • make 
+    • make install 
+
+contactosesmaps@gmail.com
+eC4ccHRQt4Dx6U2
+/usr/local/bin/noip2
