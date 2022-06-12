@@ -6,9 +6,6 @@
 # Para: mision tic 2022. 08 Junio 2022 
 # # version ='1.0' VsCodium
 
-
-
-
 class Vehiculo():
     color = "blanco"
     num_llantas = 4
@@ -18,6 +15,7 @@ class Vehiculo():
     
     #Método constructor : se ejecuta siempre que instancio la calse (siempre que creo un objeto de la clase vehiculo):
     #init se encarga de construir el objeto, aqui lo definimos explicito, para que reciba unos parametros
+    #siempre que hagamos una clase debemos tener el constructor,
     def __init__(self,color,cilindraje,placa,capacidad_tanque ):
         self.color = color
         self.cilindraje = cilindraje
